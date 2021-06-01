@@ -1,0 +1,66 @@
+.page {
+  padding: 0 150px;
+}
+.heading {
+  font-size: 50px;
+  font-weight: 800;
+}
+.top {
+  display: grid;
+  grid-gap: 20px;
+  height: 500px;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  /* background: black; */
+  padding: 20px;
+  grid-template:
+    "a a b b"
+    "a a c c"
+    "a a d d";
+}
+.top div {
+  /* background: yellow; */
+  font-size: 30px;
+  text-align: center;
+  z-index: 0;
+}
+.item1 {
+  grid-area: a;
+  max-width: 100%;
+}
+
+.item2 {
+  grid-area: b;
+  /* max-width: 50%; */
+}
+
+.item3 {
+  grid-area: c;
+}
+
+.item4 {
+  grid-area: d;
+}
+
+.item5 {
+  grid-area: e;
+}
+
+.bigImage {
+  height: 300px;
+  border: pink 1px solid;
+}
+.bigTitle {
+  height: 100px;
+
+  border: purple 1px solid;
+}
+
+.ads{
+    height: 200px;
+    width: 50px;
+    position: fixed;
+    z-index: 2;
+    margin: 350px 0 0 0 ;
+    /* top: -100px; */
+}

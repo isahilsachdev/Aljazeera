@@ -1,0 +1,277 @@
+.nav-header {
+  background: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.01);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.navbar {
+  display: flex;
+  font-size: 1.2rem;
+  border: 0px solid rgb(216, 18, 0);
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  background: white;
+  gap: 10px;
+}
+.navbar-logo {
+  cursor: pointer;
+  text-decoration: none;
+  border: 0px solid black;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex: 20%;
+}
+
+.navbar-logo-div {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid black;
+}
+
+.navbar-logo-div img {
+  height: 100%;
+}
+.navbar-logo h1 {
+  color: orange;
+}
+
+.nav-menu {
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  border: 0px solid black;
+  display: flex;
+  flex: 80%;
+  align-items: center;
+  gap: 5%;
+}
+
+.nav-item {
+  display: flex;
+  border: 0px solid black;
+}
+
+.nav-links {
+  color: black;
+  text-decoration: none;
+  border: 0px solid black;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-btn {
+  flex: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 0px solid black;
+  gap: 10%;
+}
+
+.nav-btn a {
+  text-decoration: none;
+}
+.nav-btn button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.nav-btn button:hover {
+  color: orange;
+}
+.nav-btn button:focus {
+  outline: none;
+}
+.fa-play-circle {
+  color: orange;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.input-nav {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.input-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid black;
+}
+.input-box input {
+  background: none;
+  border: none;
+}
+.input-box input:focus {
+  outline: none;
+}
+.input-box button {
+  background: none;
+  border: none;
+}
+.input-box button:focus {
+  outline: none;
+}
+.input-box input {
+  padding: 12px 25px;
+  flex: 80%;
+  font-size: 20px;
+}
+.input-box button {
+  background: orange;
+  padding: 12px 25px;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+}
+.input-box .fa-search {
+  font-size: 20px;
+}
+.input-none {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .NavbarItems {
+    position: relative;
+    border: 1px solid wheat;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    border: 0px solid wheat;
+    gap: 0;
+    align-items: flex-start;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+  }
+
+  .nav-menu.active {
+    background: white;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    border: 0px solid wheat;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    border: 0px solid wheat;
+  }
+
+  .nav-links:hover {
+    border-radius: 0;
+  }
+
+  .nav-header {
+    background: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05),
+      0px 20px 20px rgba(0, 0, 0, 0.01);
+      width: 100%;
+      border: 0px solid black;
+  }
+  .navbar {
+    display: flex;
+    font-size: 1.2rem;
+    border: 0px solid rgb(216, 18, 0);
+    background: white;
+    gap: 10px;
+    width: 100%;
+    border: 0px solid black;
+  }
+
+  .navbar-logo {
+    border: 0px solid rgb(0, 0, 0);
+  }
+  .navbar-logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-logo-div img {
+    height: 100%;
+  }
+  .navbar-logo h1 {
+    color: orange;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: 0px solid black;
+  }
+
+  .fa-times {
+    color: black;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 0px solid wheat;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    transition: 250ms;
+  }
+
+  button {
+    display: none;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  .nav-header{
+    width: 100%;
+  }
+
+  .navbar{
+    width: 100%;
+  }
+}

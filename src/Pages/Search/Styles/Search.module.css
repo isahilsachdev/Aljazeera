@@ -1,0 +1,86 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 79%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 0px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.title {
+  border: 0px solid black;
+  /* width: 58%; */
+  margin: 10px 67% 0px 10%;
+  /* text-align: left; */
+  color: #8d8da3;
+}
+.title span {
+  margin: 4px;
+  font-size: x-large;
+}
+.btnContainer {
+  border: 0px solid black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  gap: 15px;
+  align-items: center;
+}
+.pageBtn {
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #8d8da3;
+}
+
+.activeBtn {
+  background: #fa9000;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+}
+.pageBtn,
+.activeBtn:focus {
+  outline: none;
+  border: none;
+}
+.prevBtn,
+.nextBtn {
+  background: transparent;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #8d8da3;
+  border: none;
+}
+
+.prevBtn,
+.nextBtn:focus {
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .btnContainer {
+    margin: 0 auto;
+    width: 700px;
+  }
+}
+
+.loader__show {
+  text-align: center;
+}

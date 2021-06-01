@@ -1,0 +1,32 @@
+.largequotes {
+  font-size: 50px;
+  color: "orange";
+  float: "left";
+}
+.headings {
+  float: left;
+  margin-left: 20px;
+  font-size: 50px;
+}
+.author,
+.smallauthor {
+  float: left;
+  font-size: 17px;
+  color: rgb(117, 111, 111);
+  font-weight: 800;
+  margin-left: 20px;
+}
+.smallauthor {
+  float: left;
+  margin-left: 30px;
+  margin-top: 0;
+}
+.date {
+  float: left;
+  margin: 3px 0 0 20px;
+  color: rgb(145, 141, 141);
+}
+
+.loader__show {
+  text-align: center;
+}

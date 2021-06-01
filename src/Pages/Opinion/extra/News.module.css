@@ -1,0 +1,43 @@
+.card{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    margin: 30px 0;
+  
+    padding: 20px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 54px #bebebe,
+             -20px -20px 54px #ffffff;
+}
+img{
+    height: 100px;
+    /* float: left; */
+    
+}
+.image{
+    width: 20%;
+    margin-right: 30px;
+    /* border: 1px solid black; */
+}
+.right{
+    /* border: 1px solid black; */
+   text-align: left;
+   
+}
+.pageBtn ,.activePageBtn{
+    margin: 4px;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 2px;
+}
+.activePageBtn{
+    background-color: orangered;
+}
+.selected{
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin: 5px;
+}
